@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "选购商品",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tui-searchbar": "/components/thorui/tui-searchbar/tui-searchbar",
+    "tui-numberbox": "/components/thorui/tui-numberbox/tui-numberbox",
+    "tui-button": "/components/thorui/tui-button/tui-button"
+  }
+}

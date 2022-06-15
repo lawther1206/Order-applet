@@ -1,0 +1,66 @@
+
+.tui-searchbar__box.data-v-42e5e394 {
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+.tui-search-bar__form.data-v-42e5e394 {
+	position: relative;
+	flex: auto;
+}
+.tui-search-bar__box.data-v-42e5e394 {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 8px;
+	box-sizing: border-box;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.tui-search-bar__box .tui-search-bar__input.data-v-42e5e394 {
+	padding: 0 8px;
+	width: 100%;
+	border: 0;
+	font-size: 14px;
+	box-sizing: content-box;
+	background: transparent;
+}
+.tui-search-bar__box .tui-search-bar__input.data-v-42e5e394:focus {
+	outline: none;
+}
+.tui-search-bar__box .tui-icon-search.data-v-42e5e394 {
+	flex-shrink: 0;
+}
+.tui-search-bar__box .tui-icon-clear.data-v-42e5e394 {
+	margin-left: 2px;
+	flex-shrink: 0;
+}
+.tui-search-bar__label.data-v-42e5e394 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	font-size: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tui-search-bar__cancel-btn.data-v-42e5e394 {
+	font-size: 15px;
+	margin-left: 8px;
+	line-height: 28px;
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+.tui-search-bar__text.data-v-42e5e394 {
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: middle;
+	padding-left: 12rpx;
+	color: rgba(0, 0, 0, 0.5);
+}
+

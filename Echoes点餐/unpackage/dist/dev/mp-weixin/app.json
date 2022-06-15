@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/order/order",
+        "pages/my/my",
+        "pages/ShoppingCart/ShoppingCart",
+        "pages/productDetail/productDetail",
+        "pages/pay/pay",
+        "pages/SearchList/SearchList"
+    ],
+    "subPackages": [],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "Echoes点餐",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "color": "#666666",
+        "selectedColor": "#5677FC",
+        "backgroundColor": "#F8F8F8",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "商品",
+                "iconPath": "static/images/tabbar/code_gray.png",
+                "selectedIconPath": "static/images/tabbar/code_active.png"
+            },
+            {
+                "pagePath": "pages/order/order",
+                "text": "订单",
+                "iconPath": "static/images/tabbar/extend_gray.png",
+                "selectedIconPath": "static/images/tabbar/extend_active.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "static/images/tabbar/my1.png",
+                "selectedIconPath": "static/images/tabbar/my2.png"
+            }
+        ]
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
+}

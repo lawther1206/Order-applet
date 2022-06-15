@@ -1,0 +1,146 @@
+
+page {
+		height: 100%;
+}
+.top-search {
+		width: 100%;
+		height: 100rpx;
+		background: #fff;
+		position: -webkit-sticky;
+		position: sticky;
+		left: 0;
+		top: 0;
+		z-index: 9999;
+}
+.tui-center {
+		/* padding-bottom: 100rpx; */
+}
+
+	/* 	.tui-searchbox {
+
+	}
+
+
+ */
+.tab-view {
+		/* height: 100%; */
+		width: 200rpx;
+		position: fixed;
+		left: 0;
+		z-index: 10;
+}
+.tab-bar-item {
+		width: 200rpx;
+		height: 110rpx;
+		background: #f6f6f6;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 26rpx;
+		color: #444;
+		font-weight: 400;
+}
+.active {
+		position: relative;
+		color: #000;
+		font-size: 30rpx;
+		font-weight: 600;
+		background: #fcfcfc;
+}
+.active::before {
+		content: '';
+		position: absolute;
+		border-left: 8rpx solid #5677FC;
+		height: 30rpx;
+		left: 0;
+}
+
+	/* 左侧导航布局 end*/
+
+	/* 右侧布局 */
+.right-box {
+
+		width: 100%;
+		padding-left: 220rpx;
+		box-sizing: border-box;
+		left: 0;
+}
+.page-view {
+		width: 100%;
+		overflow: hidden;
+		padding-top: 20rpx;
+		padding-right: 20rpx;
+		box-sizing: border-box;
+		padding-bottom: env(safe-area-inset-bottom);
+}
+
+	/* 轮播图 */
+.swiper {
+		width: 100%;
+		height: 220rpx;
+		border-radius: 12rpx;
+		overflow: hidden;
+		-webkit-transform: translateZ(0);
+		        transform: translateZ(0);
+}
+.slide-image {
+		width: 100%;
+		height: 220rpx;
+}
+
+	/* 内容 */
+.g-box {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		/* 	background-color: #000000; */
+		margin: 30rpx;
+		border-radius: 40rpx;
+}
+.g-title {
+		display: flex;
+		flex-flow: column;
+		margin-bottom: 20rpx;
+}
+.g-title view {
+		padding-bottom: 20rpx;
+		padding-left: 10px;
+}
+.g-image {
+		width: 150rpx;
+		height: 150rpx;
+}
+.g-foot {
+		position: relative;
+		/* bottom: 0px; */
+		top: 58px;
+		display: flex;
+		justify-content: flex-end;
+		padding-left: 10rpx;
+}
+
+	/* 底部 */
+.tui-tabbar {
+		width: 100%;
+		height: 100rpx;
+		background: #fff;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+
+
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 30rpx;
+		box-sizing: border-box;
+		font-size: 24rpx;
+		z-index: 9999;
+}
+.tui-bold {
+		font-size: 30rpx;
+		font-weight: bold;
+}
+

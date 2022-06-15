@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "购物车",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tui-button": "/components/thorui/tui-button/tui-button",
+    "tui-numberbox": "/components/thorui/tui-numberbox/tui-numberbox",
+    "tui-toast": "/components/thorui/tui-toast/tui-toast"
+  }
+}

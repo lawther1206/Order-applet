@@ -1,0 +1,97 @@
+{
+	"pages": [{
+		"path": "pages/home/home",
+		"style": {
+			"navigationBarTitleText": "选购商品",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/order/order",
+		"style": {
+			"navigationBarTitleText": "订单页", //顶部标题
+			"enablePullDownRefresh": true //下拉动作
+		}
+
+	}, {
+		"path": "pages/my/my",
+		"style": {
+			"navigationBarTitleText": "我的",
+			"enablePullDownRefresh": false
+		}
+
+	}    ,{
+            "path" : "pages/ShoppingCart/ShoppingCart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/productDetail/productDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/pay/pay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/SearchList/SearchList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue"
+		}
+	},
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Echoes点餐",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#5677FC",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"text": "商品",
+				"iconPath": "static/images/tabbar/code_gray.png",
+				"selectedIconPath": "static/images/tabbar/code_active.png"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"text": "订单",
+				"iconPath": "static/images/tabbar/extend_gray.png",
+				"selectedIconPath": "static/images/tabbar/extend_active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/images/tabbar/my1.png",
+				"selectedIconPath": "static/images/tabbar/my2.png"
+			}
+		]
+	}
+}

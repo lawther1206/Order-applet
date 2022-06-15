@@ -1,0 +1,519 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 标题样式 */
+.tui-edit-goods {
+	width: 100%;
+	border-radius: 12rpx;
+	overflow: hidden;
+	padding: 24rpx 30rpx 0 30rpx;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #333;
+	font-size: 24rpx;
+}
+.tui-goods-num {
+	font-weight: bold;
+	color: #e41f19;
+}
+.tui-cart-cell {
+	width: 100%;
+	border-radius: 12rpx;
+	background: #FFFFFF;
+	padding: 40rpx 0rpx;
+	overflow: hidden;
+}
+.tui-mtop {
+	margin-top: 24rpx;
+}
+/* 内容的样式 */
+.center {
+	padding: 0 20rpx;
+}
+.tui-goods-item {
+	display: flex;
+	padding: 0 30rpx;
+	box-sizing: border-box;
+}
+.tui-checkbox {
+	min-width: 70rpx;
+	display: flex;
+	align-items: center;
+}
+.tui-checkbox .wx-checkbox-input {
+	width: 40rpx;
+	height: 40rpx;
+	margin-right: 0 !important;
+	border-radius: 50% !important;
+	-webkit-transform: scale(0.8);
+	        transform: scale(0.8);
+	border-color: #d1d1d1 !important;
+}
+/* 图片 */
+.tui-goods-img {
+	width: 220rpx;
+	height: 220rpx !important;
+	border-radius: 12rpx;
+	flex-shrink: 0;
+	display: block;
+}
+.tui-goods-info {
+	width: 100%;
+	padding-left: 20rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+/* 购物车内的标题 */
+.tui-goods-title {
+	white-space: normal;
+	word-break: break-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	font-size: 24rpx;
+	line-height: 30rpx;
+	color: #333;
+}
+/* 购物车内的标签 */
+.tui-goods-model {
+	max-width: 100%;
+	color: #333;
+	background: #F5F5F5;
+	border-radius: 40rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 16rpx;
+	box-sizing: border-box;
+}
+/* 标签内的字体样式 */
+.tui-model-text {
+	max-width: 100%;
+	-webkit-transform: scale(0.9);
+	        transform: scale(0.9);
+	-webkit-transform-origin: 0 center;
+	        transform-origin: 0 center;
+	font-size: 24rpx;
+	line-height: 32rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* 价格 */
+.tui-price-box {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.tui-goods-price {
+	font-size: 34rpx;
+	font-weight: 500;
+	color: #e41f19;
+}
+/* 底部 */
+.tui-tabbar {
+	width: 100%;
+	height: 100rpx;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+
+
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30rpx;
+	box-sizing: border-box;
+	font-size: 24rpx;
+	z-index: 9999;
+}
+.tui-tabbar::before {
+	content: '';
+	width: 100%;
+	border-top: 1rpx solid #d9d9d9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+}
+.tui-checkAll {
+	display: flex;
+	align-items: center;
+}
+.tui-checkbox {
+	min-width: 70rpx;
+	display: flex;
+	align-items: center;
+}
+.tui-checkbox-pl {
+	padding-left: 12rpx;
+}
+.tui-bold {
+	font-weight: bold;
+}
+.tui-total-price {
+	padding-left: 30rpx;
+	font-size: 30rpx !important;
+}
+/* 购物车物品 */
+/* 内容 */
+.g-box {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	/* 	background-color: #000000; */
+	margin: 30rpx;
+	border-radius: 40rpx;
+}
+.g-title {
+	display: flex;
+	flex-flow: column;
+	margin-bottom: 20rpx;
+}
+.g-title view {
+	padding-bottom: 20rpx;
+	padding-left: 10px;
+}
+.g-image {
+	width: 150rpx;
+	height: 150rpx;
+}
+.g-foot {
+	position: relative;
+	/* bottom: 0px; */
+	top: 58px;
+	display: flex;
+	justify-content: flex-end;
+	padding-left: 10rpx;
+}
+/* 已选择 */
+.selde-true {
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+	/* background: #C80808; */
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJrSURBVDhPrZPdSxRRGIef2d2ZdVatNCMKI6vNxLKiD/uQCALvAyHwJrwouohuuou6qi78C7rpPwgCqfTGgqLog8hQ+gJDsijcMnV33Zl2dnem97hru6OTGfibPRzmnfM++57feY/miVhBhUrzimnFgUtu+UHS48ksfHGK7426R0e1R2edJm/BtQQCJ7JwaRRc+RKVvHApXpCRdVWSy7UteTbVGsUPFVoETPyCi0PQIGtDqpAACVPWefS22jTVxYrBkhYBLzyUqqSk8F9garGdg/Uxj/FknpudEtHKlfqMePoZIhZUSZW6HTzsaTgTt7lyKE0srzPwRhIq5AMOj0Gt+KcSNTkMNRuloUue/RPOttnsacxx+6WJKfHhj8qAsnzA6YRsV4DhDOxtcHBnypVlp6DnoMXuzTn6npm8fq+zWk5p5rvypgz1AQ3LJZLxaAgV6DqW4tSRWbI/BCaju8OibVuOu4+qGBnRqXNdWS8WZRSsfAw+4AbTm9vebCJE371VxLfm6DqR4eRxi9bmHAODJm+HDNZI26iqld/1ITH8T2MtAO6Ki3dJqMnDp2GDwTvVxHc4tOx0uN9v8uGFwKQaw9bmRjgNLU2yuEIL2sblxmVJMENoYk1Wkrbvc4jIDXn3PEqVtMq8NHmmJlOc781jRutL0UVAmPzqcOtqhJq1kiL156XnlCJ6cVZSsNSkR/vpUQ4cbS5Fiwq8eolxi/7rYYxIFPmhzVsk/hfkXifTKdrPTbC/ww9TCgQW5fCqz2LscYH0Nw1PLnZ0XZaN7TkOd9cS08vbrNQSwErN95nvDAO1TODy9e+//C/Bb7M4/cGdE/O3AAAAAElFTkSuQmCC);
+	margin-left: 6rpx;
+	margin-top: 40rpx;
+}
+.selde-false {
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+	background: #FFFFFF;
+	margin-left: 6rpx;
+	margin-top: 40rpx;
+}
+
